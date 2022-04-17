@@ -1,0 +1,80 @@
+:root {
+    --background: #C8A2C8;
+    --text: rgba(6, 5, 5, 0.908);
+}
+
+body {
+    background-color: var(--background);
+    font-family: sans-serif;
+}
+
+h1 {
+    font-variant-caps: Helvetica, small-caps;
+    font-size: 300%;
+    color: var(--text)
+}
+
+
+h2 {
+    font-size: 150%;
+    color: var(--background);
+}
+
+a {
+    font-weight: bold;
+    color: var(--background);
+}
+
+.img {
+    width: 365px;
+    height: 365px;
+}
+
+
+.item {
+    background-color: var(--text);
+}
+
+.text {
+    padding: 10px;
+    font-size: 80%;
+    color: var(--background);
+}
+
+#meContainer {
+    display: inline-block;
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.column {
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
